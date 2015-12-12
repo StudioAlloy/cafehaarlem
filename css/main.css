@@ -2,16 +2,18 @@ body,
 .wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: center;
 }
 body {
   /* 20 of 534 */
-  background: url(https://unsplash.it/1024/768?image=534) no-repeat center center fixed; 
+  background: url(https://unsplash.it/1024/768?image=534) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  
+
+  padding: 0;
+  margin: 0;
   text-align: center;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
@@ -27,9 +29,14 @@ body {
   border-radius: 10px;
 }
 a, a:visited {
-  color: #e16;
+color: #fff;
   text-decoration: none;
   font-weight: 700;
+  border-bottom: 2px solid #e16;
+}
+a:hover {
+  color: #fff;
+  border-bottom: 4px solid #e16;
 }
 h2 {
   font-weight: 400;
@@ -41,8 +48,9 @@ a.btn {
   color: #fff;
   text-transform: uppercase;
 }
-p, h2 {
-margin: 50px 0; 
+a.btn,
+a.btn:hover {
+  border-bottom: 0;
 }
 footer {
   background: #e16;
@@ -56,7 +64,7 @@ footer .sa-inner {
   justify-content: space-between;
   align-items: center;
 }
-footer a {
+footer a.sa-credits {
   text-decoration: none;
   color: #fff;
 }
@@ -67,7 +75,7 @@ footer a {
 .sa-credits {
   background: rgba(0,0,0,.2);
 }
-.sa-credits p {
+.sa-credits p.sa-credits {
   font-size: 14px;
   font-weight: 700;
 }
