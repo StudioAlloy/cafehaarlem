@@ -3,7 +3,7 @@ box-sizing: border-box;
 }
 body {
   /* 20 of 534 */
-  background: url(img/background.jpg) no-repeat center center fixed;
+  background: url(../img/background.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
